@@ -40,7 +40,7 @@ test('should set note on textarea change', () => {
 		target: { value }
 	});
 	expect(wrapper.state('note')).toBe(value);
-});
+});	
 
 test('should set amount if valid input', () => {
 	const value = '23.25';
