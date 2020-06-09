@@ -17,24 +17,9 @@ module.exports = (env) => {
       }, {
         test: /\.s?css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader, 
-            options: {
-              publicPath: '/dist/'
-          }
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          }
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
         ]
       }]
     },
@@ -47,7 +32,6 @@ module.exports = (env) => {
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       historyApiFallback: true,
-      publicPath: '/dist/'
     }
   }
 };
