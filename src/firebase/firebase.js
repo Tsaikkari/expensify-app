@@ -54,12 +54,12 @@ database.ref('expenses').on('child_added', (snapshot) => {
 	});*/
 
 // Setup expenses with 3 items (description, note, amount, createdAt)
-database.ref('expenses').push({
+/*database.ref('expenses').push({
 	description: 'Rent',
 	note: '',
 	amount: 100000,
 	createdAt: 23478909283745
-});
+});*/
 
 // Firebase creates a new property automatically given it a random value
 /*database.ref('notes').push({
