@@ -1,6 +1,6 @@
 .box-layout {
 	align-items: center;
-	background: url('/images/bg.jpg');
+	background: url('/images/silhouette.jpg');
 	background-size: cover;
 	display: flex;
 	height: 100vh;
@@ -9,7 +9,7 @@
 }
 
 .box-layout__box {
-	background: fade-out(white, .15);
+	background: fade-out(white, .30); //#cedad9
 	border-radius: 3px;
 	padding: $l-size $m-size;
 	text-align: center;
@@ -17,6 +17,9 @@
 }
 
 .box-layout__title {
-	margin: 0 0 $m-size;
+	color: $dark-grey;
+	font-family: serif;
+	letter-spacing: 1.5px;
 	line-height: 1;
+	margin: 0 0 $m-size;
 }
